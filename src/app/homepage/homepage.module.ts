@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InicioComponent } from './inicio/inicio.component';
+import { RouterModule } from '@angular/router';
+import { RegistroComponent } from '../acceso/registro/registro.component';
+
 
 
 
 @NgModule({
   declarations: [
-    InicioComponent
+    InicioComponent,
+    RegistroComponent
   ],
+
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ]
 })
 export class HomepageModule { }

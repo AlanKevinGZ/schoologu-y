@@ -4,6 +4,9 @@ import { LoginComponent } from './acceso/login/login.component';
 import { RecuperarComponent } from './acceso/recuperar/recuperar.component';
 import { RegistroComponent } from './acceso/registro/registro.component';
 import { InicioComponent } from './homepage/inicio/inicio.component';
+import { ProductosComponent } from './galeria/productos/productos.component';
+import { GaleriaModule } from './galeria/galeria.module';
+import { Producto1Component } from './galeria/producto1/producto1.component';
 
 
 
@@ -15,6 +18,12 @@ const routes: Routes = [
   
   { path: 'nomina', loadChildren:()=>import('./nomina/nomina.module').then(m=>m.NominaModule) },
 
+
+
+  {path:'productos', component:ProductosComponent},
+  {path:'productos/:id', component:Producto1Component}, 
+  {path:'productos', loadChildren:()=>import('./galeria/galeria.module').then(m=>m.GaleriaModule)},
+  
   { path: '**', pathMatch: 'full', redirectTo: '' },
 ];
 

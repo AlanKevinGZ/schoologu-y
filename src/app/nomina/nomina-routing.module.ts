@@ -9,6 +9,7 @@ const routes: Routes = [
   { path:'docentes', component:DocentesComponent },
   { path:'admin', component:AdministrativoComponent },
 
+  
 ];
 
 @NgModule({

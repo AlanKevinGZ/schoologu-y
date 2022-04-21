@@ -15,7 +15,7 @@ import { MenuNominaComponent } from './menu-nomina/menu-nomina.component';
   ],
   imports: [
     CommonModule,
-    NominaRoutingModule
+     NominaRoutingModule,
   ]
 })
 export class NominaModule { }

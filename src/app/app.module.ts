@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { AccesoModule } from './acceso/acceso.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GaleriaModule } from './galeria/galeria.module';
 import { NominaModule } from './nomina/nomina.module';
+
 
 
 
@@ -14,8 +17,10 @@ import { NominaModule } from './nomina/nomina.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NominaModule,
     AccesoModule,
+    NominaModule,
+    GaleriaModule,
+    RouterModule,
    
   ],
   providers: [],

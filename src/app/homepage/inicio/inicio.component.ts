@@ -22,7 +22,7 @@ export class InicioComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   handleScroll(){
     const windowScroll = window.pageYOffset;
-    console.log(windowScroll);
+    /* console.log(windowScroll); */
     
     if(windowScroll > 777){
       this.sticky = true;
